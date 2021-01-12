@@ -1,11 +1,15 @@
-var currentNumber = 1,
+function fibonacci(maxNumber) {
+    var currentNumber = 1,
     previousNumber = 0,
-    temp,
-    interval = 1000;
+    tempNumber;
 
-while (currentNumber < interval) {
-    console.log(currentNumber);
-    temp = currentNumber;
-    currentNumber += previousNumber;
-    previousNumber = temp;
+    while (currentNumber < maxNumber) {
+        console.log(currentNumber);
+        tempNumber = currentNumber;
+        currentNumber += previousNumber;
+        previousNumber = tempNumber;
+    }
 }
+
+fibonacci(100);
+
