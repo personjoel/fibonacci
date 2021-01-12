@@ -1,8 +1,9 @@
-var currentNumber = 1;
-var previousNumber = 0;
-var temp;
+var currentNumber = 1,
+    previousNumber = 0,
+    temp,
+    interval = 1000;
 
-while (currentNumber < 100) {
+while (currentNumber < interval) {
     console.log(currentNumber);
     temp = currentNumber;
     currentNumber += previousNumber;
